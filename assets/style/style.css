@@ -1,0 +1,360 @@
+/* impoert font robotto Serif dari google font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&family=Lato&family=Roboto+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 25px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.3s ease;
+    position: fixed;
+    z-index: 9999999;
+}
+.navbar .jumbotron {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .logo-flouws a {
+    color: #f21414;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo-flouws a span {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+    color: #f21414;
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+    color: #f21414;
+}
+.navbar.canges-color {
+    padding: 10px 0;
+    background: #f21414;
+}
+.navbar.canges-color .logo-flouws a {
+    color: #fff;
+}
+.navbar.canges-color .menu li a:hover {
+    color: #fff;
+}
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Halaman Home */
+.container-home {
+    max-width: 1300px;
+    justify-content: center;
+    margin: auto;
+}
+.home {
+    display: flex;
+    background: url('../img/img3.jpg') no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home .container-home {
+    width: 100%;
+    display: flex;
+}
+.home .container-home .row {
+    margin-right: 0;
+}
+.home .home-content .text-3 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span {
+    color: #f21414;
+    font-weight: 800;
+}
+
+/* Halaman Konten */
+#content {
+    padding: 20px;
+}
+#content p {
+    text-indent: 25px;
+    text-align: justify;
+    font-weight: 400;
+    word-spacing: 5px;
+}
+main {
+    /* padding: 20px; */
+    overflow: auto;
+}
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.profile header {
+    text-align: center;
+}
+
+.featured-img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.profile img {
+    width: 150px;
+    margin: 15px 0 12px 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding: 20px;
+}
+aside figure img {
+    border-radius: 15px;
+}
+aside p {
+    text-align: center;
+}
+aside a {
+    text-align: center;
+}
+/* halaman activity */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.box {
+    color: #f21414;
+}
+.box :after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.box .col-4 {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+.icon {
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    margin: 0 auto;
+}
+.box .col-4 h4 {
+    margin: 20px 0;
+}
+/* Halaman Member */
+.icon-member {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid #f21414;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    margin: 0 auto;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.box .col-4 h5 {
+    margin: 15px 0;
+    color: black;
+}
+/* Halaman Contact */
+.form input,
+.form textarea {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: block;
+    width: 50%;
+    border: 2px solid #f21414;
+}
+.form input {
+    height: 30px;
+    border-radius: 5px;
+}
+.form textarea {
+    height: 150px;
+    border-radius: 5px;
+}
+input[type='submit'] {
+    background-color: #f21414;
+    color: white;
+    border-radius: 10px;
+}
+input[type='submit']:hover {
+    cursor: pointer;
+    background-color: #ff09ad;
+    border-radius: 10px;
+}
+.error {
+    color: red;
+    margin-top: -15px;
+    text-align: center;
+    font-size: 13px;
+}
+.icon-cont {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #f21414;
+    border-radius: 50%;
+    line-height: 71px;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+    color: black;
+}
+
+/* Styling footer */
+svg {
+    margin-bottom: -75px;
+}
+footer {
+    padding-bottom: 20px;
+    color: white;
+    background-color: #f21414;
+    text-align: center;
+    font-weight: 300;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 1000px) {
+    .navbar .jumbotron {
+        padding: 0 50px;
+    }
+    .navbar .logo-flouws a {
+        color: #f21414;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #f21414;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before {
+        content: '\f00d';
+    }
+    .home .home-content .text-3 {
+        font-size: 35px;
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    svg {
+        margin-bottom: -10px;
+    }
+    .container {
+        width: 90%;
+    }
+    .box .col-4 {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+}
